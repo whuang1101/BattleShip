@@ -1,0 +1,19 @@
+.boards {
+    display: flex;
+    gap: 3em;
+    flex: 8;
+}
+
+.game-text {
+    flex: 2;
+    font-size: 1.3em;
+}
+.position {
+    border: 1px solid white;
+    padding: .5em;
+}
+.player-one, .player-two{
+    display: flex;
+    flex-direction:column;
+    gap: 1em;
+}

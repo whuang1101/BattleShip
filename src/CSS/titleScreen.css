@@ -1,0 +1,102 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'ArcadeFont';
+    src: url(./PressStart2P-Regular.ttf);
+}
+.container {
+    font-family: 'ArcadeFont', 'Times New Roman', Times, serif;
+    height: 100vh;
+}
+
+.title-screen, .player-screen, .game-screen{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    
+}
+
+.title-content, .player-content, .game-content{
+    flex: 9;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    color: lightgrey;
+    overflow: hidden;
+}
+.title {
+    flex: 4;
+    font-size: 6em;
+    animation: slideUp 3s forwards;
+}
+.name, .submit {
+    animation: fadeIn 6s;
+}
+.name {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    gap: 1em;
+    padding: 1em;
+}
+.type-name {
+    font-size: 1.2em;
+    padding: .2em;
+    border-radius: 1em;
+    padding-left: .4em;
+}
+.submit {
+    flex: 1;
+
+}
+.start-game {
+    padding: .5em;
+    font-size: 1.5em;
+}
+.emptiness {
+    flex: 10;
+}
+.github-creator{
+    flex: 1;
+    background-color: lightgrey;
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    font-size: .8em;
+}
+.hide {
+    display: none !important;
+}
+@keyframes slideUp{
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+@keyframes slideUpAndDown {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(50%);
+    }
+    100% {transform: translateY(0%);}
+}
+@keyframes fadeIn {
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 100%;
+    }
+}

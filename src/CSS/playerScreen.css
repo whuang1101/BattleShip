@@ -1,0 +1,25 @@
+.game-title {
+    flex:3;
+    font-size: 2.5em;
+}
+.player-content {
+    gap: 2em;
+}
+.player-name-text {
+    flex:1;
+    font-size: 2em;
+}
+.empty-space{
+    flex: 10;
+}
+.player-board, .player-board-two, .enemy-board{
+    height: 30em;
+    width: 30em;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: .2em
+}
+.cell, .cell-one, .cell-two{
+    border: 1px solid black;
+}

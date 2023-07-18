@@ -1,8 +1,6 @@
 /* eslint-disable no-undef */
-const { experiments } = require('webpack');
-const exp = require('constants');
-const { Ship, matchArray } = require('./ship');
-const { GameBoard, validPosition } = require('./gameboard');
+const { Ship, matchArray } = require('./gameplayJS/ship');
+const { GameBoard, validPosition } = require('./gameplayJS/gameboard');
 
 test('3 hits sinks the ship', () => {
   const length = 3;
@@ -77,4 +75,5 @@ test('Receive Attack hitting', () => {
   const numberOfHits = gameBoard.allShips[0].hits;
   expect(numberOfHits).toBe(3);
   expect(gameBoard.allShips[0].isSunk()).toBeTruthy();
+  expect(gameBoard.allShipsSunk()).toBeTruthy();
 });

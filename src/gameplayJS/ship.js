@@ -13,6 +13,7 @@ class Ship {
     this.hits = 0;
     this.sunk = false;
     this.coordinate = [];
+    this.name = '';
   }
 
   hit(givenCoordinate) {
