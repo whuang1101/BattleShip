@@ -26,7 +26,6 @@ function gameLoop() {
   const playerTwo = new Player('bob');
   const enemyBoard = document.querySelector('.enemy-board');
   playerTwo.gameBoard.randomBoard();
-  console.log(playerTwo.gameBoard.board);
   createPlayerBoard(firstBoard, playerOne, 'cell');
   createFinalBoard(enemyBoard, playerTwo, 'cell', playerOne, true);
   const gameText = document.querySelector('.game-text');
